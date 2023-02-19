@@ -1,0 +1,537 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Germany) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 7, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\UHRwin.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.deu\\afxres.rc""          // Standard components\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\UHRwin.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 143, 34
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+FONT 8, "Lucida Sans Unicode"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,9,20,20
+    LTEXT           "UHRwin - v4.0 (beta 0.0.1)",IDC_STATIC,44,9,81,8,
+                    SS_NOPREFIX
+    LTEXT           " (C) SCHRAUSSER 2011",IDC_STATIC,42,17,78,8
+END
+
+IDD_UHRwin_DIALOG DIALOGEX 0, 0, 144, 81
+STYLE WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "UHRwin"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+END
+
+IDD_Einstellungen DIALOGEX 65386, 65524, 134, 282
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Einstellungen"
+FONT 7, "Lucida Sans Unicode", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "übernehmen",IDOK,73,267,54,10
+    PUSHBUTTON      "°",IDCANCEL,7,267,53,10,BS_LEFT
+    LTEXT           "Hintergrund",IDC_STATIC,15,11,40,8
+    GROUPBOX        "Farbe",IDC_STATIC,7,1,120,38
+    GROUPBOX        "Sekunde",IDC_STATIC,7,197,120,52
+    CONTROL         "",IDC_CHECK_skzg,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | 
+                    WS_TABSTOP,100,205,21,10
+    EDITTEXT        IDC_EDIT_skzg,74,206,22,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+    PUSHBUTTON      "Reset",IDC_BUTTON_reset,73,255,54,10
+    COMBOBOX        IDC_COMBO_fhg,73,8,48,52,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Zeiger",IDC_STATIC,13,207,20,8
+    LTEXT           "Zeigerfarbe",IDC_STATIC,13,219,36,8
+    COMBOBOX        IDC_COMBO_fskzgfb,74,218,48,52,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Zahlfarbe",IDC_STATIC,13,232,30,8
+    COMBOBOX        IDC_COMBO_fskzlfb,74,231,48,52,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Minute",IDC_STATIC,7,145,120,52
+    CONTROL         "",IDC_CHECK_mnzg,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | 
+                    WS_TABSTOP,100,154,21,10
+    EDITTEXT        IDC_EDIT_mnzg,74,154,22,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+    LTEXT           "Zeiger",IDC_STATIC,13,156,20,8
+    LTEXT           "Zeigerfarbe",IDC_STATIC,13,168,36,8
+    COMBOBOX        IDC_COMBO_fmzgfb,74,166,48,52,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Zahlfarbe",IDC_STATIC,13,181,30,8
+    COMBOBOX        IDC_COMBO_fmzlf,74,180,48,52,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Stunde",IDC_STATIC,7,93,120,52
+    CONTROL         "",IDC_CHECK_stzg,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | 
+                    WS_TABSTOP,100,102,21,10
+    EDITTEXT        IDC_EDIT_stzg,74,102,22,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+    LTEXT           "Zeiger",IDC_STATIC,13,103,20,8
+    LTEXT           "Zeigerfarbe",IDC_STATIC,13,115,36,8
+    COMBOBOX        IDC_COMBO_fszgfb,74,114,48,52,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Zahlfarbe",IDC_STATIC,13,128,30,8
+    COMBOBOX        IDC_COMBO_fszlfb,74,127,48,52,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Uhr",IDC_STATIC,7,40,120,52
+    CONTROL         "",IDC_CHECK_uhr,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | 
+                    WS_TABSTOP,100,49,21,10
+    EDITTEXT        IDC_EDIT_uhr,74,49,22,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+    LTEXT           "Darstellung",IDC_STATIC,13,50,38,8
+    LTEXT           "Rahmen",IDC_STATIC,13,62,26,8
+    COMBOBOX        IDC_COMBO_furm,74,61,48,52,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Hintergrund",IDC_STATIC,13,75,40,8
+    COMBOBOX        IDC_COMBO_fuhg,74,74,48,52,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Info",IDC_STATIC,16,24,13,8
+    COMBOBOX        IDC_COMBO_fin,73,21,48,52,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 4,0,0,0
+ PRODUCTVERSION 0,0,1,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040704b0"
+        BEGIN
+            VALUE "CompanyName", "SCHRAUSSER\0"
+            VALUE "FileDescription", "UHRwin, System Zeit und Datum\0"
+            VALUE "FileVersion", "4, 0, 0, 0\0"
+            VALUE "InternalName", "UHRwin\0"
+            VALUE "LegalCopyright", "Dietmar Schrausser (C) SCHRAUSSER 2011\0"
+            VALUE "OriginalFilename", "UHRwin.EXE\0"
+            VALUE "ProductName", "UHRwin\0"
+            VALUE "ProductVersion", "beta 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x407, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 136
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 27
+    END
+
+    IDD_UHRwin_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 137
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 74
+    END
+
+    IDD_Einstellungen, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        VERTGUIDE, 15
+        VERTGUIDE, 74
+        VERTGUIDE, 121
+        TOPMARGIN, 7
+        HORZGUIDE, 20
+        HORZGUIDE, 34
+        HORZGUIDE, 171
+        HORZGUIDE, 183
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_Einstellungen DLGINIT
+BEGIN
+    IDC_COMBO_fhg, 0x403, 2, 0
+0x0030, 
+    IDC_COMBO_fhg, 0x403, 4, 0
+0x3532, 0x0035, 
+    IDC_COMBO_fhg, 0x403, 4, 0
+0x3536, 0x0036, 
+    IDC_COMBO_fhg, 0x403, 6, 0
+0x3536, 0x3335, 0x0035, 
+    IDC_COMBO_fhg, 0x403, 6, 0
+0x3536, 0x3832, 0x0030, 
+    IDC_COMBO_fhg, 0x403, 8, 0
+0x3438, 0x3132, 0x3035, 0x0034, 
+    IDC_COMBO_fhg, 0x403, 9, 0
+0x3631, 0x3737, 0x3936, 0x3036, "\000" 
+    IDC_COMBO_fhg, 0x403, 9, 0
+0x3631, 0x3137, 0x3631, 0x3038, "\000" 
+    IDC_COMBO_fhg, 0x403, 9, 0
+0x3631, 0x3137, 0x3639, 0x3038, "\000" 
+    IDC_COMBO_fhg, 0x403, 9, 0
+0x3631, 0x3137, 0x3931, 0x3533, "\000" 
+    IDC_COMBO_fhg, 0x403, 9, 0
+0x3331, 0x3533, 0x3237, 0x3037, "\000" 
+    IDC_COMBO_fhg, 0x403, 9, 0
+0x3631, 0x3737, 0x3237, 0x3531, "\000" 
+    IDC_COMBO_fskzgfb, 0x403, 2, 0
+0x0030, 
+    IDC_COMBO_fskzgfb, 0x403, 4, 0
+0x3532, 0x0035, 
+    IDC_COMBO_fskzgfb, 0x403, 4, 0
+0x3536, 0x0036, 
+    IDC_COMBO_fskzgfb, 0x403, 6, 0
+0x3536, 0x3335, 0x0035, 
+    IDC_COMBO_fskzgfb, 0x403, 6, 0
+0x3536, 0x3832, 0x0030, 
+    IDC_COMBO_fskzgfb, 0x403, 8, 0
+0x3438, 0x3132, 0x3035, 0x0034, 
+    IDC_COMBO_fskzgfb, 0x403, 9, 0
+0x3631, 0x3737, 0x3936, 0x3036, "\000" 
+    IDC_COMBO_fskzgfb, 0x403, 9, 0
+0x3631, 0x3137, 0x3631, 0x3038, "\000" 
+    IDC_COMBO_fskzgfb, 0x403, 9, 0
+0x3631, 0x3137, 0x3639, 0x3038, "\000" 
+    IDC_COMBO_fskzgfb, 0x403, 9, 0
+0x3631, 0x3137, 0x3931, 0x3533, "\000" 
+    IDC_COMBO_fskzgfb, 0x403, 9, 0
+0x3331, 0x3533, 0x3237, 0x3037, "\000" 
+    IDC_COMBO_fskzgfb, 0x403, 9, 0
+0x3631, 0x3737, 0x3237, 0x3531, "\000" 
+    IDC_COMBO_fskzlfb, 0x403, 2, 0
+0x0030, 
+    IDC_COMBO_fskzlfb, 0x403, 4, 0
+0x3532, 0x0035, 
+    IDC_COMBO_fskzlfb, 0x403, 4, 0
+0x3536, 0x0036, 
+    IDC_COMBO_fskzlfb, 0x403, 6, 0
+0x3536, 0x3335, 0x0035, 
+    IDC_COMBO_fskzlfb, 0x403, 6, 0
+0x3536, 0x3832, 0x0030, 
+    IDC_COMBO_fskzlfb, 0x403, 8, 0
+0x3438, 0x3132, 0x3035, 0x0034, 
+    IDC_COMBO_fskzlfb, 0x403, 9, 0
+0x3631, 0x3737, 0x3936, 0x3036, "\000" 
+    IDC_COMBO_fskzlfb, 0x403, 9, 0
+0x3631, 0x3137, 0x3631, 0x3038, "\000" 
+    IDC_COMBO_fskzlfb, 0x403, 9, 0
+0x3631, 0x3137, 0x3639, 0x3038, "\000" 
+    IDC_COMBO_fskzlfb, 0x403, 9, 0
+0x3631, 0x3137, 0x3931, 0x3533, "\000" 
+    IDC_COMBO_fskzlfb, 0x403, 9, 0
+0x3331, 0x3533, 0x3237, 0x3037, "\000" 
+    IDC_COMBO_fskzlfb, 0x403, 9, 0
+0x3631, 0x3737, 0x3237, 0x3531, "\000" 
+    IDC_COMBO_fmzgfb, 0x403, 2, 0
+0x0030, 
+    IDC_COMBO_fmzgfb, 0x403, 4, 0
+0x3532, 0x0035, 
+    IDC_COMBO_fmzgfb, 0x403, 4, 0
+0x3536, 0x0036, 
+    IDC_COMBO_fmzgfb, 0x403, 6, 0
+0x3536, 0x3335, 0x0035, 
+    IDC_COMBO_fmzgfb, 0x403, 6, 0
+0x3536, 0x3832, 0x0030, 
+    IDC_COMBO_fmzgfb, 0x403, 8, 0
+0x3438, 0x3132, 0x3035, 0x0034, 
+    IDC_COMBO_fmzgfb, 0x403, 9, 0
+0x3631, 0x3737, 0x3936, 0x3036, "\000" 
+    IDC_COMBO_fmzgfb, 0x403, 9, 0
+0x3631, 0x3137, 0x3631, 0x3038, "\000" 
+    IDC_COMBO_fmzgfb, 0x403, 9, 0
+0x3631, 0x3137, 0x3639, 0x3038, "\000" 
+    IDC_COMBO_fmzgfb, 0x403, 9, 0
+0x3631, 0x3137, 0x3931, 0x3533, "\000" 
+    IDC_COMBO_fmzgfb, 0x403, 9, 0
+0x3331, 0x3533, 0x3237, 0x3037, "\000" 
+    IDC_COMBO_fmzgfb, 0x403, 9, 0
+0x3631, 0x3737, 0x3237, 0x3531, "\000" 
+    IDC_COMBO_fmzlf, 0x403, 2, 0
+0x0030, 
+    IDC_COMBO_fmzlf, 0x403, 4, 0
+0x3532, 0x0035, 
+    IDC_COMBO_fmzlf, 0x403, 4, 0
+0x3536, 0x0036, 
+    IDC_COMBO_fmzlf, 0x403, 6, 0
+0x3536, 0x3335, 0x0035, 
+    IDC_COMBO_fmzlf, 0x403, 6, 0
+0x3536, 0x3832, 0x0030, 
+    IDC_COMBO_fmzlf, 0x403, 8, 0
+0x3438, 0x3132, 0x3035, 0x0034, 
+    IDC_COMBO_fmzlf, 0x403, 9, 0
+0x3631, 0x3737, 0x3936, 0x3036, "\000" 
+    IDC_COMBO_fmzlf, 0x403, 9, 0
+0x3631, 0x3137, 0x3631, 0x3038, "\000" 
+    IDC_COMBO_fmzlf, 0x403, 9, 0
+0x3631, 0x3137, 0x3639, 0x3038, "\000" 
+    IDC_COMBO_fmzlf, 0x403, 9, 0
+0x3631, 0x3137, 0x3931, 0x3533, "\000" 
+    IDC_COMBO_fmzlf, 0x403, 9, 0
+0x3331, 0x3533, 0x3237, 0x3037, "\000" 
+    IDC_COMBO_fmzlf, 0x403, 9, 0
+0x3631, 0x3737, 0x3237, 0x3531, "\000" 
+    IDC_COMBO_fszgfb, 0x403, 2, 0
+0x0030, 
+    IDC_COMBO_fszgfb, 0x403, 4, 0
+0x3532, 0x0035, 
+    IDC_COMBO_fszgfb, 0x403, 4, 0
+0x3536, 0x0036, 
+    IDC_COMBO_fszgfb, 0x403, 6, 0
+0x3536, 0x3335, 0x0035, 
+    IDC_COMBO_fszgfb, 0x403, 6, 0
+0x3536, 0x3832, 0x0030, 
+    IDC_COMBO_fszgfb, 0x403, 8, 0
+0x3438, 0x3132, 0x3035, 0x0034, 
+    IDC_COMBO_fszgfb, 0x403, 9, 0
+0x3631, 0x3737, 0x3936, 0x3036, "\000" 
+    IDC_COMBO_fszgfb, 0x403, 9, 0
+0x3631, 0x3137, 0x3631, 0x3038, "\000" 
+    IDC_COMBO_fszgfb, 0x403, 9, 0
+0x3631, 0x3137, 0x3639, 0x3038, "\000" 
+    IDC_COMBO_fszgfb, 0x403, 9, 0
+0x3631, 0x3137, 0x3931, 0x3533, "\000" 
+    IDC_COMBO_fszgfb, 0x403, 9, 0
+0x3331, 0x3533, 0x3237, 0x3037, "\000" 
+    IDC_COMBO_fszgfb, 0x403, 9, 0
+0x3631, 0x3737, 0x3237, 0x3531, "\000" 
+    IDC_COMBO_fszlfb, 0x403, 2, 0
+0x0030, 
+    IDC_COMBO_fszlfb, 0x403, 4, 0
+0x3532, 0x0035, 
+    IDC_COMBO_fszlfb, 0x403, 4, 0
+0x3536, 0x0036, 
+    IDC_COMBO_fszlfb, 0x403, 6, 0
+0x3536, 0x3335, 0x0035, 
+    IDC_COMBO_fszlfb, 0x403, 6, 0
+0x3536, 0x3832, 0x0030, 
+    IDC_COMBO_fszlfb, 0x403, 8, 0
+0x3438, 0x3132, 0x3035, 0x0034, 
+    IDC_COMBO_fszlfb, 0x403, 9, 0
+0x3631, 0x3737, 0x3936, 0x3036, "\000" 
+    IDC_COMBO_fszlfb, 0x403, 9, 0
+0x3631, 0x3137, 0x3631, 0x3038, "\000" 
+    IDC_COMBO_fszlfb, 0x403, 9, 0
+0x3631, 0x3137, 0x3639, 0x3038, "\000" 
+    IDC_COMBO_fszlfb, 0x403, 9, 0
+0x3631, 0x3137, 0x3931, 0x3533, "\000" 
+    IDC_COMBO_fszlfb, 0x403, 9, 0
+0x3331, 0x3533, 0x3237, 0x3037, "\000" 
+    IDC_COMBO_fszlfb, 0x403, 9, 0
+0x3631, 0x3737, 0x3237, 0x3531, "\000" 
+    IDC_COMBO_furm, 0x403, 2, 0
+0x0030, 
+    IDC_COMBO_furm, 0x403, 4, 0
+0x3532, 0x0035, 
+    IDC_COMBO_furm, 0x403, 4, 0
+0x3536, 0x0036, 
+    IDC_COMBO_furm, 0x403, 6, 0
+0x3536, 0x3335, 0x0035, 
+    IDC_COMBO_furm, 0x403, 6, 0
+0x3536, 0x3832, 0x0030, 
+    IDC_COMBO_furm, 0x403, 8, 0
+0x3438, 0x3132, 0x3035, 0x0034, 
+    IDC_COMBO_furm, 0x403, 9, 0
+0x3631, 0x3737, 0x3936, 0x3036, "\000" 
+    IDC_COMBO_furm, 0x403, 9, 0
+0x3631, 0x3137, 0x3631, 0x3038, "\000" 
+    IDC_COMBO_furm, 0x403, 9, 0
+0x3631, 0x3137, 0x3639, 0x3038, "\000" 
+    IDC_COMBO_furm, 0x403, 9, 0
+0x3631, 0x3137, 0x3931, 0x3533, "\000" 
+    IDC_COMBO_furm, 0x403, 9, 0
+0x3331, 0x3533, 0x3237, 0x3037, "\000" 
+    IDC_COMBO_furm, 0x403, 9, 0
+0x3631, 0x3737, 0x3237, 0x3531, "\000" 
+    IDC_COMBO_fuhg, 0x403, 2, 0
+0x0030, 
+    IDC_COMBO_fuhg, 0x403, 4, 0
+0x3532, 0x0035, 
+    IDC_COMBO_fuhg, 0x403, 4, 0
+0x3536, 0x0036, 
+    IDC_COMBO_fuhg, 0x403, 6, 0
+0x3536, 0x3335, 0x0035, 
+    IDC_COMBO_fuhg, 0x403, 6, 0
+0x3536, 0x3832, 0x0030, 
+    IDC_COMBO_fuhg, 0x403, 8, 0
+0x3438, 0x3132, 0x3035, 0x0034, 
+    IDC_COMBO_fuhg, 0x403, 9, 0
+0x3631, 0x3737, 0x3936, 0x3036, "\000" 
+    IDC_COMBO_fuhg, 0x403, 9, 0
+0x3631, 0x3137, 0x3631, 0x3038, "\000" 
+    IDC_COMBO_fuhg, 0x403, 9, 0
+0x3631, 0x3137, 0x3639, 0x3038, "\000" 
+    IDC_COMBO_fuhg, 0x403, 9, 0
+0x3631, 0x3137, 0x3931, 0x3533, "\000" 
+    IDC_COMBO_fuhg, 0x403, 9, 0
+0x3331, 0x3533, 0x3237, 0x3037, "\000" 
+    IDC_COMBO_fuhg, 0x403, 9, 0
+0x3631, 0x3737, 0x3237, 0x3531, "\000" 
+    IDC_COMBO_fin, 0x403, 2, 0
+0x0030, 
+    IDC_COMBO_fin, 0x403, 4, 0
+0x3532, 0x0035, 
+    IDC_COMBO_fin, 0x403, 4, 0
+0x3536, 0x0036, 
+    IDC_COMBO_fin, 0x403, 6, 0
+0x3536, 0x3335, 0x0035, 
+    IDC_COMBO_fin, 0x403, 6, 0
+0x3536, 0x3832, 0x0030, 
+    IDC_COMBO_fin, 0x403, 8, 0
+0x3438, 0x3132, 0x3035, 0x0034, 
+    IDC_COMBO_fin, 0x403, 9, 0
+0x3631, 0x3737, 0x3936, 0x3036, "\000" 
+    IDC_COMBO_fin, 0x403, 9, 0
+0x3631, 0x3137, 0x3631, 0x3038, "\000" 
+    IDC_COMBO_fin, 0x403, 9, 0
+0x3631, 0x3137, 0x3639, 0x3038, "\000" 
+    IDC_COMBO_fin, 0x403, 9, 0
+0x3631, 0x3137, 0x3931, 0x3533, "\000" 
+    IDC_COMBO_fin, 0x403, 9, 0
+0x3331, 0x3533, 0x3237, 0x3037, "\000" 
+    IDC_COMBO_fin, 0x403, 9, 0
+0x3631, 0x3737, 0x3237, 0x3531, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR1             CURSOR  DISCARDABLE     "res\\cursor1.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "Inf&ormation"
+END
+
+#endif    // German (Germany) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE 7, 1
+#pragma code_page(1252)
+#endif
+#include "res\UHRwin.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.deu\afxres.rc"          // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
